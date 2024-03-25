@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <style>
+        body {
+            background-image: url(images/background1.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+            margin: 0px;
+            padding: 0px;
+        }
+        .navbar-custom {
+            background-color: #333;
+        }
+        .navbar-brand {
+            padding: 0;
+        }
+        .navbar-brand img {
+            width: 100px;
+            height: auto;
+        } 
+        .nav-link {
+            color: #ffffff;
+        }
+        .btn-primary {
+            background-color: #59db21;
+            border-color: #59db30;
+        }
+        .btn-primary:hover {
+            background-color: darkgreen;
+            border-color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo4.png" alt="Notflix">
+            </a>
+            <button 
+                class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" 
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" is="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="view.html">Discussion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="market.html">Movie renting</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Sign in/Sign up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</body>
+</html>

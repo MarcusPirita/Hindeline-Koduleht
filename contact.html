@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <style>
+        body {
+            background-image: url(images/background1.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+            margin: 0px;
+            padding: 0px;
+        }
+        .navbar-custom {
+            background-color: #333;
+        }
+        .navbar-brand {
+            padding: 0;
+        }
+        .navbar-brand img {
+            width: 100px;
+            height: auto;
+        } 
+        .nav-link {
+            color: #ffffff;
+        }
+        .btn-primary {
+            background-color: #59db21;
+            border-color: #59db30;
+        }
+        .btn-primary:hover {
+            background-color: darkgreen;
+            border-color: darkgreen;
+        }
+        .contact-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .contact-info {
+            flex: 1;
+            padding: 0 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo4.png" alt="Notflix">
+            </a>
+            <button 
+                class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" 
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" is="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="view.html">Discussion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="market.html">Movie renting</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Sign in/Sign up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <div class="contact-form">
+                    <h2 class="text-center">Contact Us</h2>
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputName" class="form-label">Name:</label>
+                            <input type="text" class="form-control" id="exampleInputName">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail" class="form-label">Email address:</label>
+                            <input type="email" class="form-control" id="exampleInputEmail">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputSubject" class="form-label">Subject:</label>
+                            <input type="text" class="form-control" id="exampleInputSubject">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputMessage" class="form-label">Message:</label>
+                            <textarea class="form-control" id="exampleInputMessage" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-secondary">Send</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-6 mx-auto">
+                <div class="contact-info">
+                    <h2 class="text-center">Contact Information</h2>
+                    <p class="text-center"><strong>Information Email:</strong> info@notflix.com</p>
+                    <p class="text-center"><strong>Support Email:</strong> support@notflix.com</p>
+                    <p class="text-center"><strong>Information Phone:</strong> +372 53525150</p>
+                    <p class="text-center"><strong>Support Phone:</strong> +372 56545352</p>
+                    <p class="text-center"><strong>Address:</strong> Sõpruse pst 182, 13424 Tallinn</p>
+                    <p class="text-center"><strong>Company:</strong> Notflix Movies OÜ</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
