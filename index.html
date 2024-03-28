@@ -14,9 +14,12 @@
             height: 100vh;
             margin: 0px;
             padding: 0px;
+            font-family: Arial, sans-serif;
+            color: #333;
         }
         .navbar-custom {
             background-color: #333;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
         .navbar-brand {
             padding: 0;
@@ -35,6 +38,66 @@
         .btn-primary:hover {
             background-color: darkgreen;
             border-color: darkgreen;
+        }
+        .carousel-item img {
+            height: 400px;
+            object-fit: cover;
+        }
+        h5 {
+            background-image: url(images/background1.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            width: 300px;
+            margin: auto;
+        }
+        .container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .container h2 {
+            color: #333;
+            font-size: 24px;
+            background-image: url(images/background1.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .container p {
+            color: #555;
+            font-size: 18px;
+            background-image: url(images/background1.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .copyright {
+            background-color: #333;
+            color: #ffffff;
+            padding: 1px 0;
+            font-size: 14px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
     </style>
 </head>
@@ -75,5 +138,57 @@
             </div>
         </div>
     </nav>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/background2.png" class="d-block w-100" alt="Slide 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>WELCOME TO NOTFLIX</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/background3.png" class="d-block w-100" alt="Slide 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>The biggest movie renting website!</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/background4.png" class="d-block w-100" alt="Slide 3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>80000+ Movies available for renting</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/background5.png" class="d-block w-100" alt="Slide 4">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Cheapest prices on the Internet!</h5>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="container">
+        <h2>Welcome To NOTFLIX</h2>
+        <p>Welcome to NOTFLIX, your ultimate destination for renting movies online! With a vast collection of over 80,000 films, NOTFLIX offers an unparalleled cinematic experience for movie enthusiasts worldwide 
+            At NOTFLIX, we strive to provide our customers with access to an extensive library of films spanning various genres, languages, and eras. Whether you're a fan of classic Hollywood blockbusters, independent films, foreign cinema, or the latest releases, we have something for everyone. 
+            Our user-friendly platform allows you to browse through our diverse catalog, discover new favorites, and conveniently rent movies from the comfort of your own home. With flexible rental options and competitive pricing, NOTFLIX ensures that movie lovers can enjoy their favorite films without breaking the bank.
+            Join the NOTFLIX community today and embark on a cinematic journey like never before. Experience the magic of movies with NOTFLIX – where entertainment knows no bounds!</p>
+    </div>
+    <div class="copyright">
+        <p>&copy; 2024 Notflix Movies OÜ. All Rights Reserved.</p>
+    </div>
 </body>
 </html>

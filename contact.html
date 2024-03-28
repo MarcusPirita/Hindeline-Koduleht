@@ -19,6 +19,7 @@
         }
         .navbar-custom {
             background-color: #333;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
         .navbar-brand {
             padding: 0;
@@ -43,9 +44,43 @@
             justify-content: space-between;
             align-items: flex-start;
         }
+        .contact-box {
+            background-image: url(images/background1.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px, 0px, 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
         .contact-info {
-            flex: 1;
-            padding: 0 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px, 0px, 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .map-container {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0px, 0px, 10px rgba(0, 0, 0, 0.1);
+        }
+        .copyright {
+            background-color: #333;
+            color: #ffffff;
+            padding: 1px 0;
+            font-size: 14px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
     </style>
 </head>
@@ -88,8 +123,8 @@
     </nav>
     <div class="container my-5">
         <div class="row">
-            <div class="col-md-6 mx-auto">
-                <div class="contact-form">
+            <div class="col-md-6">
+                <div class="contact-box">
                     <h2 class="text-center">Contact Us</h2>
                     <form>
                         <div class="mb-3">
@@ -112,18 +147,26 @@
                     </form>
                 </div>
             </div>
-            <div class="col-md-6 mx-auto">
-                <div class="contact-info">
+            <div class="col-md-6">
+                <div class="contact-box">
                     <h2 class="text-center">Contact Information</h2>
-                    <p class="text-center"><strong>Information Email:</strong> info@notflix.com</p>
-                    <p class="text-center"><strong>Support Email:</strong> support@notflix.com</p>
-                    <p class="text-center"><strong>Information Phone:</strong> +372 53525150</p>
-                    <p class="text-center"><strong>Support Phone:</strong> +372 56545352</p>
-                    <p class="text-center"><strong>Address:</strong> Sõpruse pst 182, 13424 Tallinn</p>
-                    <p class="text-center"><strong>Company:</strong> Notflix Movies OÜ</p>
+                    <div class="contact-info">
+                        <p><strong>Information Email:</strong> info@notflix.com</p>
+                        <p><strong>Support Email:</strong> support@notflix.com</p>
+                        <p><strong>Information Phone:</strong> +372 53525150</p>
+                        <p><strong>Support Phone:</strong> +372 56545352</p>
+                        <p><strong>Address:</strong> Sõpruse pst 182, 13424 Tallinn</p>
+                        <p><strong>Company:</strong> Notflix Movies OÜ</p>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2035.9632048309747!2d24.733378915828686!3d59.43622998166279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469294f3c901b441%3A0x7c057f115e07f545!2sS%C3%B5pruse%20pst%20182%2C%2013424%20Tallinn!5e0!3m2!1sen!2see!4v1649178728930!5m2!1sen!2see" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
         </div>
+    </div>
+    <div class="copyright">
+        <p>&copy; 2024 Notflix Movies OÜ. All Rights Reserved.</p>
     </div>
 </body>
 </html>
